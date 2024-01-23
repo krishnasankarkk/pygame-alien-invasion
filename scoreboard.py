@@ -30,7 +30,7 @@ class Scoreboard:
 		if self.stats.score > self.stats.highscore:
 			self.score_image = self.font.render(score_str, True, self.font_color,self.settings.bg_color)
 		else:
-			self.score_image = self.font.render(score_str, True, (200, 0, 0),self.settings.bg_color)
+			self.score_image = self.font.render(score_str, True, (20, 220, 0),self.settings.bg_color)
 
 		# display score at top right position.
 		self.score_rect = self.score_image.get_rect()
