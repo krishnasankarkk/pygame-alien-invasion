@@ -186,6 +186,13 @@ class AlienInvasion:
 				highscore = str(self.stats.highscore)
 				file.write(highscore)
 			sys.exit()
+   
+		elif event.key == pygame.K_ESCAPE:
+			# Quit the game.
+			with open(self.stats.highscore_file, 'w') as file:
+				highscore = str(self.stats.highscore)
+				file.write(highscore)
+			sys.exit()
 			
 	def _check_keyup_events(self, event):
 		"""Responds to keyup events."""
