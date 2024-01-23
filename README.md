@@ -7,3 +7,8 @@
 => Game is developed using python's pygame package.
 
 => We can run the game by executing 'alien_invasion.py' file.
+
+Here are some screenshots of the game.
+
+![](images/screenshots/Screenshot1.png)
+![](images/screenshots/Screenshot2.png)
