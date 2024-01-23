@@ -12,7 +12,7 @@ class Bullet(Sprite):
 		self.screen_rect = ai_game.screen.get_rect()
 		
 		# Load bullet image and rect.
-		self.image = pygame.image.load('images/star.png')
+		self.image = pygame.image.load('images/bullet.png')
 		self.rect = self.image.get_rect()
 		
 		# Bullet starting postion.

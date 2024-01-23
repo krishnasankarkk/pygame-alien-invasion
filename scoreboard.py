@@ -16,7 +16,7 @@ class Scoreboard:
 		
 		# font settings for scoring information.
 		self.font_color = (10,200,200)
-		self.font = pygame.font.SysFont(None,48)
+		self.font = pygame.font.Font('fonts/Agbalumo-Regular.ttf',25)
 		
 		# prepare the initial score image.
 		self.prep_score()

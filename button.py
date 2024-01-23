@@ -9,9 +9,9 @@ class Button:
 		
 		# Set dimensions and properties of the button.
 		self.width, self.height = 200, 50
-		self.button_color = (10,100,159)
+		self.button_color = (10,150,159)
 		self.text_color = (255,255,255)
-		self.font = pygame.font.SysFont(None, 48)
+		self.font = pygame.font.Font('fonts/Agbalumo-Regular.ttf', 20)
 		
 		# Button rect and center the position.
 		self.rect = pygame.Rect(0, 0, self.width, self.height)
@@ -25,8 +25,16 @@ class Button:
 		self.msg_image = self.font.render(msg, True, self.text_color, self.button_color)
 		self.msg_image_rect = self.msg_image.get_rect()
 		self.msg_image_rect.center = self.rect.center
-	
+
+	def _rounded_rect(self, rect, color, radius):
+		"""Draws a rectangle with rounded corners."""
+		pygame.draw.rect(self.screen, color, rect, border_radius=radius)
+  
 	def draw_button(self):
 		# Draw button and text image over the button.
-		self.screen.fill(self.button_color, self.rect)
+		self._rounded_rect(self.rect, self.button_color, 20)  
 		self.screen.blit(self.msg_image, self.msg_image_rect)
+  
+	
+
+  
