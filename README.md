@@ -4,9 +4,17 @@
 
 => A simple 2D game in which the aim is to shoot down a fleet of aliens as they drop down the screen in levels that increase in speed and difficulty.
 
-=> Game is developed using python's pygame package.
+=> This game is developed using python's pygame package.
 
-=> We can run the game by executing 'alien_invasion.py' file.
+=> Install pygame using pip and execute 'alien_invasion.py' file.
+```
+pip install pygame
+python alien_invasion.py
+```
+## Game Controls
+- **Left Arrow Key:** Move Left
+- **Right Arrow Key:** Move Right
+- **Spacebar:** Shoot
 
 Here are some screenshots of the game.
 
